@@ -7,7 +7,7 @@ const Container = styled.div`
     position: fixed;
     height: 50px;
     width: 100%;
-    background-color: none;
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link href="/"><Logo><span style={{color: '#7257d1', fontWeight: 'bold'}}>helium</span><span style={{fontWeight: 'bold'}}>Verse</span></Logo></Link>
             {/* <span style={{color: 'red'}}>MAP - UNDER CONSTRUCTION || MOBILE NOT READY</span> */}
             <UnorderedList>
-                <Link href="#">
+                <Link href="/#heliumintro">
                     <NavItem>
                         Helium
                     </NavItem>
@@ -78,17 +78,17 @@ const Navbar = () => {
                 </Link>
                 <Link href="/map">
                     <NavItem>
-                        Map
+                        <span style={{textDecoration: 'line-through', color: 'red'}}>Map</span>
                     </NavItem>
                 </Link>
                 <Link href="/map">
                     <NavItem>
-                        FAQ
+                    <span style={{textDecoration: 'line-through', color: 'red'}}>FAQ</span>
                     </NavItem>
                 </Link>
                 <Link href="#">
                     <NavItem>
-                        Contact
+                    <span style={{textDecoration: 'line-through', color: 'red'}}>Contact</span>
                     </NavItem>
                 </Link>
                

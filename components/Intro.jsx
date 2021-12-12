@@ -23,6 +23,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    position: relative;
 
 `
 
@@ -163,7 +164,9 @@ const Intro = () => {
                 <span>helium</span>Verse
             </Title>
             <ButtonDiscover>
-                EXPLORE
+                <Link href="/#heliumintro">
+                        EXPLORE
+                </Link>    
             </ButtonDiscover>
 
             {/* <Card>

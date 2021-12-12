@@ -38,23 +38,23 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
     return (
         <Ul open={open}>
-            <Link href="/">
+            <Link href="/#heliumintro">
                 <li>Helium</li>
             </Link>
-            <Link href="#">
+            <Link href="/#news">
                 <li>News</li>
             </Link>
             <Link href="/cryptocurrencies">
-                <li>Crypto</li>
+                <li>Crypto </li>
             </Link>
             <Link href="/map">
-                <li>Map</li>
+                <li>Map <span style={{color: 'red', fontSize: '12px'}}>under construction</span></li>
             </Link>
             <Link href="#">
-                <li>FAQ</li>
+                <li>FAQ <span style={{color: 'red', fontSize: '12px'}}>under construction</span></li>
             </Link>
             <Link href="#">
-                <li>Contact</li>
+                <li>Contact <span style={{color: 'red', fontSize: '12px'}}>under construction</span></li>
             </Link>
             
         </Ul>

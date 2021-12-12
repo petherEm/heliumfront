@@ -21,7 +21,7 @@ const Container = styled.div`
 
     h1 {
         color: white;
-        margin-top: 30px;
+        margin-top: 60px;
         margin-bottom: 30px;
 
         @media only screen and (max-width: 400px) {
@@ -161,7 +161,7 @@ const News = ({ simplified }) => {
     if(!cryptoNews?.value) return 'Loading...';
 
     return (
-        <Container>
+        <Container id="news">
             <h1>Latest News from Crypto World</h1>
 
             {/* -------------I DO NOT KNOW HOW TO FIX IT ---------------*/}

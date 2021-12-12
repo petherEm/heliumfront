@@ -34,6 +34,10 @@ const Wrapper = styled.div`
     align-items: center;
     width: 80%;
 
+    @media only screen and (max-width: 400px) {
+            width: 90%;
+        }
+
 `
 
 const WrapperTop = styled.div`
@@ -47,12 +51,20 @@ const LeftTop = styled.div`
     flex: 0.4;
     display: flex;
     justify-content: flex-start;
+
+    @media only screen and (max-width: 400px) {
+            font-size: 18px;
+        }
 `
 
 const RightTop = styled.div`
     flex: 0.6;
     display: flex;
     justify-content: flex-end;
+
+    @media only screen and (max-width: 400px) {
+            font-size: 14px;
+        }
 `
 
 const WrapperMiddle = styled.div`
@@ -69,6 +81,11 @@ const Stats = styled.div`
     justify-content: flex-start;
     font-size: 18px;
 
+    @media only screen and (max-width: 400px) {
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
 
 `
 const IconContainer = styled.div` 
@@ -81,6 +98,7 @@ const StatsCard = styled.div`
     justify-content: center;
     align-items: center;
 
+
 `
 
 const Description = styled.div`
@@ -89,7 +107,12 @@ const Description = styled.div`
     p {
         font-size: 18px;
         color: lightgray;
+
+        @media only screen and (max-width: 400px) {
+            font-size: 14px;
+        }
     }
+    
 
 `
 const Linking = styled.div`

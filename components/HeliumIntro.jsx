@@ -28,6 +28,8 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
     display: flex;
+    height: auto;
+    margin-top: 60px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,7 +48,7 @@ const demoImage = 'http://coinrevolution.com/wp-content/uploads/2020/06/cryptone
 const HeliumIntro = () => {
 
     return (
-        <Container>
+        <Container id="heliumintro">
             <Wrapper>
                     <h1>People Powered Network.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cumque sunt accusantium recusandae repellendus vitae non cupiditate autem ab quo?</p>
