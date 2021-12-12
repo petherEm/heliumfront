@@ -152,7 +152,7 @@ const Intro = () => {
                     <DollarCircleOutlined /> Price: <b>${millify(cryptoDetails?.price)}</b>  {cryptoDetails?.change > 0 ? <p style={{color: 'lightgreen', display: 'inline'}}>{millify(cryptoDetails?.change)} %</p> : <p style={{color: 'red', display: 'inline'}}>{millify(cryptoDetails?.change)} %</p>}
                 </p>
                 <p><ThunderboltOutlined /> Vol: <b>${millify(cryptoDetails?.volume)}</b></p>
-                <p><DollarCircleOutlined /> Market Cap: <b>${millify(cryptoDetails?.volume)}</b></p>
+                <p><DollarCircleOutlined /> Market Cap: <b>${millify(cryptoDetails?.marketCap)}</b></p>
                 <p><TrophyOutlined /> All Time High: <b>${millify(cryptoDetails?.allTimeHigh.price)}</b></p>
                 <br />
                 <Link href="/cryptocurrencies">
