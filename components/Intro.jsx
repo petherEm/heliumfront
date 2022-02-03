@@ -132,10 +132,10 @@ const ButtonDiscover = styled.button`
 
 const Intro = () => {
 
-    const { data, isFetching } = useGetCryptoDetailsQuery(62765)
+    const { data, isFetching } = useGetCryptoDetailsQuery('rGDiacWtB')
     const cryptoDetails = data?.data?.coin;
 
-    console.log(cryptoDetails?.change)
+    console.log(cryptoDetails)
 
     if(isFetching) return 'Loading...';
    
@@ -152,7 +152,7 @@ const Intro = () => {
                 <p>
                     <DollarCircleOutlined /> Price: <b>${millify(cryptoDetails?.price)}</b>  {cryptoDetails?.change > 0 ? <p style={{color: 'lightgreen', display: 'inline'}}>{millify(cryptoDetails?.change)} %</p> : <p style={{color: 'red', display: 'inline'}}>{millify(cryptoDetails?.change)} %</p>}
                 </p>
-                <p><ThunderboltOutlined /> Vol: <b>${millify(cryptoDetails?.volume)}</b></p>
+                <p><ThunderboltOutlined /> Vol: <b>${millify(cryptoDetails?.['24hVolume'])}</b></p>
                 <p><DollarCircleOutlined /> Market Cap: <b>${millify(cryptoDetails?.marketCap)}</b></p>
                 <p><TrophyOutlined /> All Time High: <b>${millify(cryptoDetails?.allTimeHigh.price)}</b></p>
                 <br />

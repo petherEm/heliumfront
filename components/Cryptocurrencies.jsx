@@ -96,6 +96,8 @@ const Cryptocurrencies = ({ simplified }) => {
     const { data: cryptoList, isFetching } = useGetCryptosQuery(count);
     const [cryptos, setCryptos ] = useState(cryptoList?.data?.coins);
 
+    console.log(cryptos)
+
 
     if(isFetching) return 'Loading...';
     
@@ -104,8 +106,8 @@ const Cryptocurrencies = ({ simplified }) => {
         <>
             <CardContainer>
                 {cryptos?.map((currency) => (
-                    <div key={currency.id}>
-                        <Link href={`/crypto/${currency.id}`}>
+                    <div key={currency.uuid}>
+                        <Link href={`/crypto/${currency.uuid}`}>
                             <CardCrypto>
                                 <TopInCardCrypto>
                                     <p style={{fontWeight: 'bold'}}>{currency.rank}. {currency.name} </p>
